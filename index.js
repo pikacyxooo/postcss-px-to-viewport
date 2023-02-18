@@ -46,7 +46,7 @@ module.exports = postcss.plugin('postcss-px-to-viewport', function (options) {
       var landscapeRules = [];
       css.walkRules(function (rule) {
         // Add exclude option to ignore some files like 'node_modules'
-        var file = rule.source && rule.source.input.file;
+        var file = rule.source && rule.source.input.file && rule.source.input.file.split(path.sep).join('/');
   
         if (opt.include && file) {
           if (Object.prototype.toString.call(opt.include) === '[object RegExp]') {
