@@ -1,0 +1,8 @@
+.m-class {
+  margin: -2.85714vw .5vh;
+  padding: 5vmin 2.71429vw 1px;
+  border: 0.85714vw solid black;
+  border-bottom-width: 1px;
+  font-size: 4vw;
+  line-height: 5.71429vw;
+}
